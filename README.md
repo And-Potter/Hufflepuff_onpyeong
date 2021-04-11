@@ -21,7 +21,7 @@ private val signUpActivityLauncher = registerForActivityResult(
 }
 
 val intent = Intent(this, SignUpActivity::class.java)
-            signUpActivityLauncher.launch(intent)
+signUpActivityLauncher.launch(intent)
 ```
 
 - SignUpActivity -> SignInActivity
