@@ -1,5 +1,3 @@
-# Hufflepuff_onpyeong
-
 # 🚕 Week 1
 
 
