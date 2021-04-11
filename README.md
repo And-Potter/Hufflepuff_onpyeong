@@ -37,7 +37,7 @@ finish()
 
 🐣 **생명주기와 Log띄우기**
 
-![](C:\Users\강수현\Desktop\KakaoTalk_20210411_190958314.png)
+![KakaoTalk_20210411_190958314](https://user-images.githubusercontent.com/70002218/114304910-9ebe8480-9b10-11eb-86b9-a8f89eba13ad.png)
 
 
 🐣 **추가**
