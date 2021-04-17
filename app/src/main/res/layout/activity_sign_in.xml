@@ -22,7 +22,7 @@
             android:id="@+id/tv_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="깃허브 아이디"
+            android:text="@string/github_id"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:layout_editor_absoluteY="128dp" />
@@ -31,7 +31,7 @@
             android:id="@+id/et_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="ID를 입력해주세요"
+            android:hint="@string/input_id"
             app:layout_constraintStart_toStartOf="@id/tv_id"
             app:layout_constraintTop_toBottomOf="@id/tv_id" />
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -49,7 +49,7 @@
             android:id="@+id/tv_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="비밀번호"
+            android:text="@string/password"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -57,7 +57,7 @@
             android:id="@+id/et_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="비밀번호를 입력해주세요"
+            android:hint="@string/input_password"
             android:inputType="textPassword"
             app:layout_constraintTop_toBottomOf="@id/tv_password"
             app:layout_constraintStart_toStartOf="@id/tv_password"/>
@@ -67,7 +67,7 @@
         android:id="@+id/btn_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="LOGIN"
+        android:text="@string/login"
         android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -86,7 +86,7 @@
             android:id="@+id/tv_sign_up_q"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="아이디/비밀번호가 없으신가요?"
+            android:text="@string/sign_up_q"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -94,7 +94,7 @@
             android:id="@+id/tv_sign_up"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="회원가입"
+            android:text="@string/sign_up_kr"
             android:textStyle="bold"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toEndOf="@id/tv_sign_up_q"

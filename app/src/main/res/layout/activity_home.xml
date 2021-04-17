@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf= "@+id/img_profile"
             app:layout_constraintStart_toStartOf="parent"
-            android:text="onpyeong"/>
+            android:text="@string/user_id"/>
 
         <TextView
             android:id="@+id/tv_user_name"
@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/tv_github_id"
             app:layout_constraintStart_toStartOf="parent"
-            android:text="강수현"/>
+            android:text="@string/user_name"/>
 
         <TextView
             android:id="@+id/tv_story"
@@ -48,7 +48,8 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/tv_user_name"
             app:layout_constraintStart_toStartOf="parent"
-            android:text="안녕하세요!\nSOPT 28기 안드로이드 파트 강수현입니다!"/>
+            android:text="@string/user_introduce"/>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

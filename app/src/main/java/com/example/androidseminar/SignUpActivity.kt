@@ -18,11 +18,11 @@ class SignUpActivity : AppCompatActivity() {
         binding = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        initButtonClickEvent()
+        signUpButtonClickEvent()
         Log.d("lifeCycle", "SignUp_onCreate")
     }
 
-    private fun initButtonClickEvent() {
+    private fun signUpButtonClickEvent() {
         binding.btnSignUp.setOnClickListener {
 
             val userName = binding.edtName.text
@@ -74,4 +74,5 @@ class SignUpActivity : AppCompatActivity() {
         super.onDestroy()
         Log.d("lifeCycle", "SignUp_onDestroy")
     }
+
 }

@@ -1,5 +1,6 @@
 package com.example.androidseminar
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -16,6 +17,12 @@ class SignInActivity : AppCompatActivity() {
             ActivityResultContracts.StartActivityForResult()
     ) {
         // 데이터를 받아서 할 일이 들어가는 칸!
+        if(it.resultCode == Activity.RESULT_OK) {
+            with(binding) {
+                etId.setText(it.data!!.getStringExtra("id"))
+                etPassword.setText(it.data!!.getStringExtra("password"))
+            }
+        }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,11 +30,12 @@ class SignInActivity : AppCompatActivity() {
         binding = ActivitySignInBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        initButtonClickEvent()
+        loginButtonClickEvent()
+        signUpButtonClickEvent()
         Log.d("lifeCycle", "SignIn_onCreate")
     }
 
-    private fun initButtonClickEvent() {
+    private fun loginButtonClickEvent() {
         binding.btnLogin.setOnClickListener {
 
             val userId = binding.etId.text
@@ -43,7 +51,9 @@ class SignInActivity : AppCompatActivity() {
                 Toast.makeText(this@SignInActivity, "로그인 성공", Toast.LENGTH_SHORT).show()
             }
         }
+    }
 
+    private fun signUpButtonClickEvent() {
         binding.tvSignUp.setOnClickListener {
             val intent = Intent(this, SignUpActivity::class.java)
             signUpActivityLauncher.launch(intent)
