@@ -34,9 +34,11 @@ class SignUpActivity : AppCompatActivity() {
             }else {
                 //화면 이동
                 val intent = Intent()
-                intent.putExtra("name", binding.edtName.text.toString())
-                intent.putExtra("id", binding.etId.text.toString())
-                intent.putExtra("password", binding.etPassword.text.toString())
+                with (intent) {
+                    putExtra("password", binding.etPassword.text.toString())
+                    putExtra("id", binding.etId.text.toString())
+                    putExtra("name", binding.edtName.text.toString())
+                }
                 setResult(Activity.RESULT_OK, intent)
                 finish()
             }
