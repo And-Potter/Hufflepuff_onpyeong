@@ -18,11 +18,11 @@ class SignUpActivity : AppCompatActivity() {
         binding = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        initButtonClickEvent()
+        signUpButtonClickEvent()
         Log.d("lifeCycle", "SignUp_onCreate")
     }
 
-    private fun initButtonClickEvent() {
+    private fun signUpButtonClickEvent() {
         binding.btnSignUp.setOnClickListener {
 
             val userName = binding.edtName.text
@@ -34,9 +34,11 @@ class SignUpActivity : AppCompatActivity() {
             }else {
                 //화면 이동
                 val intent = Intent()
-                intent.putExtra("name", binding.edtName.text.toString())
-                intent.putExtra("id", binding.etId.text.toString())
-                intent.putExtra("password", binding.etPassword.text.toString())
+                with (intent) {
+                    putExtra("password", binding.etPassword.text.toString())
+                    putExtra("id", binding.etId.text.toString())
+                    putExtra("name", binding.edtName.text.toString())
+                }
                 setResult(Activity.RESULT_OK, intent)
                 finish()
             }
@@ -72,4 +74,5 @@ class SignUpActivity : AppCompatActivity() {
         super.onDestroy()
         Log.d("lifeCycle", "SignUp_onDestroy")
     }
+
 }
