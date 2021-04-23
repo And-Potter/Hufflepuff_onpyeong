@@ -1,9 +1,9 @@
-package com.example.androidseminar
+package com.example.androidseminar.ui
 
 import android.os.Bundle
-import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.androidseminar.databinding.ActivityUserInfoBinding
+import com.example.androidseminar.R
 
 class UserInfoActivity : AppCompatActivity() {
 

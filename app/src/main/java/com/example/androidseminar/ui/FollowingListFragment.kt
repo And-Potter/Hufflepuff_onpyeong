@@ -1,10 +1,11 @@
-package com.example.androidseminar
+package com.example.androidseminar.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.androidseminar.data.FollowingUserInfo
 import com.example.androidseminar.databinding.FragmentFollowingListBinding
 
 
@@ -34,22 +35,22 @@ class FollowingListFragment : Fragment() {
 
         followingListAdapter.userList.addAll(
                 listOf<FollowingUserInfo>(
-                        FollowingUserInfo(
-                                userImage = "지금은 빈칸! 4회차",
-                                userName = "a1"
-                        ),
-                        FollowingUserInfo(
-                                userImage = "지금은 빈칸! 4회차",
-                                userName = "b2"
-                        ),
-                        FollowingUserInfo(
-                                userImage = "지금은 빈칸! 4회차",
-                                userName = "c3"
-                        ),
-                        FollowingUserInfo(
-                                userImage = "지금은 빈칸! 4회차",
-                                userName = "d4"
-                        )
+                    FollowingUserInfo(
+                        userImage = "지금은 빈칸! 4회차",
+                        userName = "a1"
+                    ),
+                    FollowingUserInfo(
+                        userImage = "지금은 빈칸! 4회차",
+                        userName = "b2"
+                    ),
+                    FollowingUserInfo(
+                        userImage = "지금은 빈칸! 4회차",
+                        userName = "c3"
+                    ),
+                    FollowingUserInfo(
+                        userImage = "지금은 빈칸! 4회차",
+                        userName = "d4"
+                    )
                 )
         )
 

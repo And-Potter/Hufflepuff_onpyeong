@@ -1,4 +1,4 @@
-package com.example.androidseminar
+package com.example.androidseminar.ui
 
 import android.os.Bundle
 import android.util.Log
