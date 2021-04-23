@@ -1,4 +1,4 @@
-package com.example.androidseminar
+package com.example.androidseminar.ui
 
 import android.app.Activity
 import android.content.Intent
@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
-import com.example.androidseminar.databinding.ActivitySignInBinding
 import com.example.androidseminar.databinding.ActivitySignUpBinding
 
 class SignUpActivity : AppCompatActivity() {

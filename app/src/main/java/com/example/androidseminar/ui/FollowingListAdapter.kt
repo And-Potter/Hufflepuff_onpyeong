@@ -1,8 +1,9 @@
-package com.example.androidseminar
+package com.example.androidseminar.ui
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.androidseminar.data.FollowingUserInfo
 import com.example.androidseminar.databinding.ItemFollowUserBinding
 
 class FollowingListAdapter : RecyclerView.Adapter<FollowingListAdapter.FollowingUserViewHolder> () {
