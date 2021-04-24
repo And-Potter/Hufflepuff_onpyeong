@@ -51,15 +51,15 @@ finish()
 
 
 
-# 🔥 Week 2
+# 🔥 Week 2  
+
+  
+
+💛 **LEVEL-1**  
 
 
 
-💛 **LEVEL-1**
-
-
-
-🐣 **레포지터리 리스트 띄우기(RecyclerView)**
+🐣 **레포지터리 리스트 띄우기(RecyclerView)**  
 
 - **item_repo.xml**
 
@@ -69,19 +69,19 @@ finish()
 
   - **ellipsize, maxLines** 이용
 
-    ```kotlin
-    <TextView
-            android:id="@+id/tv_repo_name"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:ellipsize="end" //뒤에 ... 붙이기
-            android:maxLines="1" //최대 1줄
-            tools:text="@string/repo_name"/>
-    ```
+```kotlin
+<TextView
+        android:id="@+id/tv_repo_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:ellipsize="end" //뒤에 ... 붙이기
+        android:maxLines="1" //최대 1줄
+        tools:text="@string/repo_name"/>
+```
 
 - **RepoInfo** data class 정의
 
@@ -174,10 +174,10 @@ private fun initRepoListRecyclerView() {
         )
     }
 ```
+  
 
 
-
-🐣 **more버튼 누르면 UserInfoActivity로 이동하기**
+🐣 **more버튼 누르면 UserInfoActivity로 이동하기**  
 
 - **userInfoActivityLauncher** 정의
 
