@@ -10,14 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidSeminar">
         <activity android:name=".ui.SignUpActivity" />
+        <activity android:name=".ui.HomeActivity" />
         <activity android:name=".ui.UserInfoActivity">
+
+        </activity>
+        <activity android:name=".ui.SignInActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.SignInActivity" />
     </application>
 
 </manifest>

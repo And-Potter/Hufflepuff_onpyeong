@@ -26,12 +26,10 @@ class FollowingListAdapter : RecyclerView.Adapter<FollowingListAdapter.Following
     }
 
     class FollowingUserViewHolder(
-            private val binding : ItemFollowUserBinding
+            private val binding: ItemFollowUserBinding
     ) : RecyclerView.ViewHolder(binding.root) {
         fun onBind(followingUserInfo: FollowingUserInfo) {
             binding.tvFollowUserName.text = followingUserInfo.userName
         }
     }
-
-
 }
