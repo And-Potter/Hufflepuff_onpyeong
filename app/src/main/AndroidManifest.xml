@@ -13,8 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity android:name=".ui.SignUpActivity" />
-        <activity android:name=".ui.UserInfoActivity"/>
-        <activity android:name=".ui.HomeActivity"/>
+        <activity android:name=".ui.HomeActivity" />
+        <activity android:name=".ui.UserInfoActivity">
+
+        </activity>
         <activity android:name=".ui.SignInActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
