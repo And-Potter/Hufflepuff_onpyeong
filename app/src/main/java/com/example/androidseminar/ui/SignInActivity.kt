@@ -37,11 +37,6 @@ class SignInActivity : AppCompatActivity() {
         binding = ActivitySignInBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        /*
-        * 임시로 여기에 작성할게유!!
-        * */
-
-
         loginButtonClickEvent()
         signUpButtonClickEvent()
         Log.d("lifeCycle", "SignIn_onCreate")

@@ -61,7 +61,6 @@ class SignUpActivity : AppCompatActivity() {
                         Toast.makeText(this@SignUpActivity, "회원가입 성공", Toast.LENGTH_SHORT).show()
                     } else {
                         // 서버 통신 status가 200~300이 아닌 경우
-                        // 에러가 났다면 어떻게 해야 할지..
                         Toast.makeText(this@SignUpActivity, "빈 칸이 있는지 확인해주세요", Toast.LENGTH_SHORT).show()
                     }
                 }
@@ -71,23 +70,6 @@ class SignUpActivity : AppCompatActivity() {
                     Log.d("NetworkTest", "error:$t")
                 }
             })
-
-            /*
-            * if(userName.isNullOrBlank() || userId.isNullOrBlank() || userPassword.isNullOrBlank()) {
-                Toast.makeText(this@SignUpActivity, "빈 칸이 있는지 확인해주세요", Toast.LENGTH_SHORT).show()
-            }else {
-                //화면 이동
-                val intent = Intent()
-                with (intent) {
-                    putExtra("password", binding.etPassword.text.toString())
-                    putExtra("id", binding.etId.text.toString())
-                    putExtra("name", binding.edtName.text.toString())
-                }
-                setResult(Activity.RESULT_OK, intent)
-                finish()
-            }
-            * */
-
         }
     }
 
