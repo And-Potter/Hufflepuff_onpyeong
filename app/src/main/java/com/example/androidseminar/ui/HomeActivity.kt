@@ -7,7 +7,9 @@ import android.util.Log
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import com.example.androidseminar.data.RepoInfo
+import com.example.androidseminar.data.SoptUserAuthStorage
 import com.example.androidseminar.databinding.ActivityHomeBinding
+import com.example.androidseminar.toast
 
 class HomeActivity : AppCompatActivity() {
 
@@ -26,7 +28,7 @@ class HomeActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         moreButtonClickEvent()
-
+        logoutButtonClickEvent()
         initRepoListRecyclerView()
 
         Log.d("lifeCycle", "Home_onCreate")
@@ -37,6 +39,19 @@ class HomeActivity : AppCompatActivity() {
             val intent = Intent(this, UserInfoActivity::class.java)
             userInfoActivityLauncher.launch(intent)
         }
+    }
+
+    private fun logoutButtonClickEvent() {
+        binding.btnLogout.setOnClickListener{
+            SoptUserAuthStorage.clearAutoLogin()
+            navigateSignIn()
+            toast("로그아웃")
+        }
+    }
+
+    fun navigateSignIn() {
+        val intent = Intent(this@HomeActivity, SignInActivity::class.java)
+        startActivity(intent)
     }
 
     private fun initRepoListRecyclerView() {
