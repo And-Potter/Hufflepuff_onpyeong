@@ -18,7 +18,7 @@ class RepoListAdapter : RecyclerView.Adapter<RepoListAdapter.RepoViewHolder> () 
         )
         return RepoViewHolder(binding)
     }
-d
+
     override fun getItemCount(): Int = repoList.size
 
     override fun onBindViewHolder(holder: RepoViewHolder, position: Int) {

@@ -25,5 +25,4 @@
     <string name="repo_name">레포지터리 이름</string>
     <string name="repo_disc">레포지터리 설명</string>
     <string name="repo_language">언어</string>
-    <string name="logout">LOGOUT</string>
 </resources>
